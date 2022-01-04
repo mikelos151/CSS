@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+/* header styles */
+
+.main-header {
+  background-color: red;
+  text-transform: uppercase;
+  text-align: center;
+  height: 6vh;
+  color: white;
+  line-height: 2;
+}
+
+h2 {
+  font-weight: 200;
+}
+
+/* section styles */
+
+.main-paragraf {
+  background-color: royalblue;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  height: 30vh;
+}
+
+p {
+  flex-basis: 60%;
+  background-color: royalblue;
+}
+
+.aside-left {
+  background-color: seagreen;
+  text-transform: uppercase;
+  text-align: center;
+  flex-basis: 20%;
+  margin: inherit;
+  color: white;
+}
+
+.aside-right {
+  background-color: pink;
+  text-transform: uppercase;
+  text-align: center;
+  flex-basis: 20%;
+  color: white;
+  margin: inherit;
+}
+
+/* main footer styles */
+
+.main-footer {
+  background-color: purple;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  height: 5vh;
+  padding: 10px;
+}
+
+/* Responsive styles */
+
+@media (max-width: 992px) {
+
+  .aside-left {
+
+    flex-basis: 100%;
+    order: 1;
+  }
+
+  .aside-right {
+    flex-basis: 30%;
+  }
+
+  p { 
+    flex-basis: 70%;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+
+  .aside-right {
+    flex-basis: 100%;
+    order: 2;
+  }
+
+  p { 
+    flex-basis: 100%;
+  }
+   
+}
